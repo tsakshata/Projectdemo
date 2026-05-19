@@ -1,2 +1,3 @@
-# Projectdemo
-application for project 
+# Project Demo
+
+Student Registration Form Project
