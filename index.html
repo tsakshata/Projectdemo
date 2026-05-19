@@ -1,19 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Project Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Student Registration Form</h1>
-    <P> this is the simplest student form here</P>
-    <h2>Welcome to Student Portal</h2>
-    <h3>Please enter the details below</h3>
-     <p> the recently changes has done in this file</p>
-    <input type="text" placeholder="Enter Student Name">
-    <button>Submit</button>
-<script src="script.js"></script>
+    <div class="container">
+
+        <h1>Student Registration Form</h1>
+
+        <p class="subtitle">
+            Welcome to the Student Portal
+        </p>
+
+        <form id="studentForm">
+
+            <div class="form-group">
+                <label>Student Name</label>
+                <input type="text" id="name" placeholder="Enter Student Name" required>
+            </div>
+            <div class="form-group">
+    <label>Student ID</label>
+    <input type="text" id="studentId" placeholder="Enter Student ID" required>
+</div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <label>Select Course</label>
+
+                <select id="course" required>
+                    <option value="">-- Select Course --</option>
+                    <option>BCA</option>
+                    <option>BSc</option>
+                    <option>BCom</option>
+                    <option>MCA</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter Phone Number" required>
+            </div>
+
+            <button type="submit">Register</button>
+
+            <p id="successMessage"></p>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
