@@ -2,6 +2,12 @@
 document.getElementById("studentForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
+    document.getElementById("clearBtn").addEventListener("click", function() {
+    document.getElementById("studentForm").reset();
+    clearErrors();
+
+    document.getElementById("successMessage").innerText = "";
+});
     if (validateAll()) {
         const now = new Date();
         document.getElementById("successMessage").innerText =
